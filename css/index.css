@@ -1,0 +1,1855 @@
+
+body{
+	font-family: Verdana,'Microsoft YaHei';
+	font-size: 14px;
+}
+
+ol,ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+dl,dt,dd,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+em,i{
+	font-style: normal;
+}
+
+.w-1000{
+	width: 1000px;
+	margin: 0 auto;
+}
+.mar-b8{
+	margin-bottom: 8px;
+}
+.mar-t20{
+	margin-top: 20px;
+}
+.mar-t40{
+	margin-top: 40px;
+}
+
+
+/*******头部区域********/
+.header-top{
+	height: 50px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+/*logo*/
+.header-top a.logo-img{
+	display: inline-block;
+	text-indent: -9999px;
+	width: 113px;
+	height: 41px;
+	background: url(../img/logo_c8caff4.png) no-repeat;
+	background-size: 113px 41px;
+	float: left;
+	margin-top: 5px;
+}
+/*搜索框*/
+.header-top form.search-form{
+	position: relative;
+	margin-left: 200px;
+	margin-top: 7px;
+	width: 380px;
+	height: 38px;
+	border: 1px solid #e4e4e4;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	float: left;
+}
+.header-top form.search-form input.search-text{
+	width: 100%;
+	height: 36px;
+	border: 0;
+	outline: 0;
+	padding: 9px 55px 9px 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	font-size: 12px;
+	line-height: 18px;
+	color: #333;
+}
+.header-top form.search-form input.search-text:focus ~ input.search-btn{
+	background: #35b558 url(../img/topsearch-icon2_8c8d8b0.png) center center no-repeat;
+}
+.header-top form.search-form input.search-btn{
+	border:0;
+	outline: 0;
+	background: url(../img/topsearch-icon_e1f5df2.png) center center no-repeat; 
+	display: inline-block;
+	width: 40px;
+	height: 38px;
+	color: #6d6d6d;
+	border-left: 1px solid #e4e4e4;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.header-top form.search-form input.search-btn:hover{
+	background: #35b558 url(../img/topsearch-icon2_8c8d8b0.png) center center no-repeat; 
+}
+.header-top form.search-form .search-tip{
+	position: absolute;
+	top: 9px;
+	right: 50px;
+}
+.header-top form.search-form .search-tip a{
+	display: inline-block;
+	padding: 1px 3px; 
+	margin-left: 5px;
+	color: #808080;
+	background: #f3f3f3;
+	font-size: 12px;
+}
+.header-top form.search-form .search-text:focus ~ .search-tip {
+	display: none;
+}
+
+/*用户登录相关信息*/
+.header-top ul.login-info{
+	float: right;
+	height: 50px;
+	position: relative;
+}
+
+.header-top ul.login-info > li{
+	float: left;
+	line-height: 50px;
+}
+.header-top ul.login-info > li > a{
+	display: inline-block;
+	height: 17px;
+	line-height: 17px;
+	font-size: 12px;
+	color: #333;
+}
+/*消息提示*/
+.header-top ul.login-info > li > a.message-tip{
+	background: url(../img/massage-icon2_d1369b2.gif) left center no-repeat;
+	background-size: 15px 13px;
+	width: 16px;
+	padding-right: 8px;
+	border-right: 1px solid #918A8A;
+	vertical-align: middle;
+}
+/*我的课程*/
+.header-top ul.login-info > li > a.my-lesson{
+	padding: 0 8px;
+	border-right: 1px solid #918A8A;
+}
+/*vip*/
+.header-top ul.login-info li > a.vip-icon{
+	margin-left: 8px;
+}
+.header-top ul.login-info li > a.vip-icon img{
+	width: 40px;
+	height: 15px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.header-top ul.login-info li .userMenu{
+	display: inline-block;
+}
+/*用户名*/
+.header-top ul.login-info li .userMenu a.user-name{
+	color: #35b558;
+	padding-right: 15px;
+	font-size: 12px;
+}
+/*用户名后面的小箭头*/
+.header-top ul.login-info li .userMenu a.user-name > .arrow{
+	position: absolute;
+	top: 23px;
+	right: 0;
+	transition: transform .2s ease;
+	-webkit-transition: -webkit-transform .2s ease;
+	-moz-transition: -moz-transform .2s ease;
+	-ms-transition: -ms-transform .2s ease;
+	-o-transition: -o-transform .2s ease;
+}
+.header-top ul.login-info li .userMenu a.user-name > .arrow::before{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-bottom: 0;
+	border-top-color: #35B558;
+}
+.header-top ul.login-info li .userMenu a.user-name > .arrow::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border: 3px solid transparent;
+	border-bottom: 0;
+	border-top-color: #fff;
+	position: absolute;
+	bottom: 2px;
+	left: 2px;
+}
+.header-top ul.login-info li .userMenu:hover > a.user-name .arrow{
+	transform: rotate(180deg);
+	-webkit-transform: -webkit-rotate(180deg);
+	-moz-transform: -moz-rotate(180deg);
+	-ms-transform: -ms-rotate(180deg);
+	-o-transform: -o-rotate(180deg);
+}
+
+/*用户菜单的下拉菜单*/
+.header-top ul.login-info li .userMenu .userMenu-list{
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 92px;
+	margin: -10px 0 0;
+	background: #fff;
+	border: 1px solid #E4E4E4;
+	z-index: 1000;
+}
+.header-top ul.login-info li .userMenu:hover .userMenu-list{
+	display: block;
+}
+/*下拉菜单上方的箭头*/
+.header-top ul.login-info li .userMenu .userMenu-list .arrow{
+	position: absolute;
+	top: -5px;
+	left: 50%;
+	margin-left: -5px;
+}
+.header-top ul.login-info li .userMenu .userMenu-list .arrow::before{
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	border:5px solid transparent;
+	border-top: 0;
+	border-bottom-color: #E4E4E4;
+}
+.header-top ul.login-info li .userMenu .userMenu-list .arrow::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-top: 0;
+	border-bottom-color: #fff;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+}
+.header-top ul.login-info li .userMenu .userMenu-list ul a{
+	display: block;
+	padding-left: 14px;
+	color: #666;
+	font-size: 12px;
+	line-height: 26px;
+}
+.header-top ul.login-info li .userMenu .userMenu-list ul a:hover{
+	background: #f3f3f3;
+	color: #35B558;
+}
+
+/*导航部分*/
+.header-nav{
+	height: 40px;
+	border-top: 2px solid #35b558;
+	border-bottom: 1px solid #e8e8e8;
+	box-shadow: 0 1px 5px #e8e8e8;
+	-webkit-box-shadow: 0 1px 5px #e8e8e8;
+	-moz-box-shadow: 0 1px 5px #e8e8e8;
+	-ms-box-shadow: 0 1px 5px #e8e8e8;
+	-o-box-shadow: 0 1px 5px #e8e8e8;
+}
+.header-nav nav{
+	margin: 0 auto;
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 14px;
+	position: relative;
+}
+.header-nav nav::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.header-nav nav .nav-box{
+	float: left;
+}
+.header-nav nav .nav-box > a{
+	float: left;
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+}
+.header-nav nav .nav-box > a:nth-of-type(1){
+	width: auto;
+	margin-right: 22px;
+}
+.header-nav nav a:hover{
+	color: #35B558;
+}
+/*导航菜单下的二级菜单内容*/
+.header-nav nav .nav-box .nav-panel{
+	display: none;
+	position: absolute;
+	top: 41px;
+	width: 100%;
+	background: #fff;
+	opacity: .97;
+	border: 1px solid #e8e8e8;
+	border-top: 0;
+	box-shadow: 0 1px 5px #e8e8e8;
+	padding-left: 50px;
+	z-index: 1000;
+}
+.header-nav nav .nav-box .nav-panel::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.header-nav nav .nav-box .nav-panel .item-box{
+	float: left;
+	width: 105px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 14px;
+	border-right: 1px solid #f7f7f7;
+	position: relative;
+}
+.header-nav nav .nav-box .nav-panel .item-box:first-child{
+	border-left: 1px solid #f7f7f7;
+}
+.header-nav nav .nav-box .nav-panel .item-box .angle-icon{
+	display: none;
+	width: 12px;
+	height: 7px;
+	position: absolute;
+	top: -7px;
+	left: 54px;
+	background: url(../img/nav-angle_f7c86b6.png) no-repeat;
+	background-size: 100% 100%;
+}
+.header-nav nav .nav-box .nav-panel .item-box:hover{
+	background-color: #f7f7f7;
+}
+.header-nav nav .nav-box .nav-panel .item-box:hover .angle-icon{
+	display: block;
+}
+.header-nav nav .nav-box .nav-panel .item-box ul a{
+	display: block;
+	font-size: 12px;
+	color: #666;
+	line-height: 29px;
+}
+.header-nav nav .nav-box .nav-panel .item-box ul a:hover{
+	color: #35B558;
+}
+/*鼠标移到导航菜单上时，显示隐藏的二级菜单*/
+.header-nav nav .nav-box:hover .nav-panel{
+	display: block;
+}
+.header-nav nav .nav-box > a:nth-of-type(2):hover ~ .nav-panel .item-box:nth-of-type(1){
+	background: #f7f7f7;
+}
+.header-nav nav .nav-box > a:nth-of-type(2):hover ~ .nav-panel .item-box:nth-of-type(1) .angle-icon{
+	display: block;
+}
+.header-nav nav .nav-box > a:nth-of-type(3):hover ~ .nav-panel .item-box:nth-of-type(2){
+	background: #f7f7f7;
+}
+.header-nav nav .nav-box > a:nth-of-type(3):hover ~ .nav-panel .item-box:nth-of-type(2) .angle-icon{
+	display: block;
+}
+.header-nav nav .nav-box > a:nth-of-type(4):hover ~ .nav-panel .item-box:nth-of-type(3){
+	background: #f7f7f7;
+}
+.header-nav nav .nav-box > a:nth-of-type(4):hover ~ .nav-panel .item-box:nth-of-type(3) .angle-icon{
+	display: block;
+}
+.header-nav nav .nav-box > a:nth-of-type(5):hover ~ .nav-panel .item-box:nth-of-type(4){
+	background: #f7f7f7;
+}
+.header-nav nav .nav-box > a:nth-of-type(5):hover ~ .nav-panel .item-box:nth-of-type(4) .angle-icon{
+	display: block;
+}
+
+/*用户相关内容*/
+.header-nav nav ul.user-need{
+	float: right;
+	overflow: hidden;
+}
+.header-nav nav ul.user-need li{
+	float: left;
+}
+.header-nav nav ul.user-need li a{
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 13px;
+}
+
+/*vip会员*/
+.header-nav nav ul.user-need li a.vip-user{
+	background: url(../img/vip-icon_76ae754.png) no-repeat;
+	padding-left: 25px;
+	background-position: left center;
+}
+/*填问卷领福利*/
+.header-nav nav ul.user-need li a.get-weal{
+	background: url(../img/txwj-icon_5ff1259.png) no-repeat;
+	padding-left: 20px;
+	background-position: left center;
+}
+/*app下载*/
+.header-nav nav ul.user-need li a.down-app{
+	background: url(../img/dl-icon_4bc18a7.png) no-repeat;
+	padding-left: 20px;
+	padding-right: 15px;
+	background-position: left center;
+	position: relative;
+}
+.header-nav nav ul.user-need li a.down-app::after{
+	content: '';
+	background: url(../img/newicon_56b11ef.png) no-repeat;
+	background-size: 14px 15px;
+	display: inline-block;
+	width: 14px;
+	height: 15px;
+	position: absolute;
+	top: 1px;
+	right: 0;
+}
+
+/*******end 头部区域********/
+
+
+/*******主体********/
+/*选项卡菜单*/
+.content .banner-box::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.content .banner-box .lesson-nav{
+	width: 210px;
+	height: 373px;
+	float: left;
+	border-top: 2px solid #35b558;
+	position: relative;
+}
+.content .banner-box .lesson-nav li{
+	font-size: 13px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 15px;
+	border-left: 1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4;
+	border-bottom: 1px solid #f5f5f5;
+	background: #fff url(../img/more-icon_d39346f.png) no-repeat;
+	background-size: 6px 10px;
+	background-position: 186px center;
+	cursor: pointer;
+}
+.content .banner-box .lesson-nav li:last-child{
+	border-bottom: 1px solid #e4e4e4;
+}
+.content .banner-box .lesson-nav li:hover{
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	border-left: 2px solid #35B558;
+	border-right: 0;
+	background: #fff;
+}
+.content .banner-box .lesson-nav li:hover > a{
+	color: #35B558;
+}
+.content .banner-box .lesson-nav li .lesson-list-show{
+	position: absolute;
+	left: 210px;
+	top: -2px;
+	box-shadow: 1px 2px 4px #E4E4E4;
+	border: 1px solid #E4E4E4;
+	border-left: 0;
+	background: #fff;
+	min-height: 341px;
+	min-width: 400px;
+	padding-bottom: 30px;
+	z-index: 900;
+	display: none;
+}
+.content .banner-box .lesson-nav li:hover .lesson-list-show{
+	display: block;
+}
+.content .banner-box .lesson-nav li .lesson-list-show dl{
+	margin: 0 10px;
+	overflow: hidden;
+}
+.content .banner-box .lesson-nav li .lesson-list-show dt{
+	border-bottom: 1px solid #F5F5F5;
+	height: 37px;
+	line-height: 45px;
+}
+.content .banner-box .lesson-nav li .lesson-list-show dd{
+	overflow: hidden;
+	margin-left: -8px;
+	padding: 3px 0;
+}
+.content .banner-box .lesson-nav li .lesson-list-show dd a{
+	display: inline-block;
+	font-size: 12px;
+	height: 14px;
+	line-height: 14px;
+	color: #666;
+	border-left: 1px solid #e0e0e0;
+	padding: 0 7px;
+	margin-top: 4px;
+	margin-bottom: 10px;
+	float: left;
+}
+.content .banner-box .lesson-nav li .lesson-list-show dl a:hover{
+	color: #35B558;
+}
+
+
+/*轮播图部分*/
+.content .banner-box .lesson-banner{
+	width: 560px;
+	float: left;
+	margin-left: 10px;
+}
+.content .banner-box .lesson-banner .slider{
+	width: 560px;
+	height: 260px;
+}
+.content .banner-box .lesson-banner .focuswork ul{
+	width: 558px;
+	height: 98px;
+	margin-top: 13px;
+	border: 1px solid #e2e2e2;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+}
+.content .banner-box .lesson-banner .focuswork li{
+	flex:1; 
+	-webkit-flex:1; 
+	-moz-flex:1; 
+	-ms-flex:1; 
+	-o-flex:1; 
+	text-align: center;
+	border-right: 1px solid #f5f5f5;
+}
+.content .banner-box .lesson-banner .focuswork li:last-child{
+	border-right: 0;
+}
+.content .banner-box .lesson-banner .focuswork li a{
+	display: block;
+	font-size: 12px;
+	color: #333;
+}
+.content .banner-box .lesson-banner .focuswork li a p{
+	margin-bottom: 4px;
+}
+.content .banner-box .lesson-banner .focuswork li a img{
+	width: 40px;
+	height: 40px;
+	margin: 8px auto 4px;
+}
+.content .banner-box .lesson-tip{
+	float: left;
+	width: 208px;
+	height: 370px;
+	border: 1px solid #E4E4E4;
+	margin-left: 10px;
+}
+/*新闻快讯*/
+.content .banner-box .lesson-tip .news{
+	padding: 0 13px;
+	height: 124px;
+	border-bottom: 1px solid #E4E4E4;
+}
+.content .banner-box .lesson-tip .news h3{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	color: #333;
+	font-size: 14px;
+	font-weight: normal;
+}
+.content .banner-box .lesson-tip .news ul.news-list a{
+	display: block;
+	color: #666;
+	font-size: 12px;
+	line-height: 1.8em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.content .banner-box .lesson-tip .news ul.news-list li:nth-of-type(odd) a{
+	color: #ff0000;
+}
+/*用户信息*/
+.content .banner-box .lesson-tip .userinfo{
+	height: 85px;
+	border-bottom: 1px solid #E4E4E4;
+	overflow: hidden;
+	font-size: 12px;
+}
+.content .banner-box .lesson-tip .userinfo a.user-img{
+	display: block;
+	width: 40px;
+	height: 40px;
+	float: left;
+	background: url(../img/1492zv4a2t2zf.jpeg) no-repeat;
+	background-size: 40px 40px;
+	margin: 10px;
+}
+.content .banner-box .lesson-tip .userinfo .info-wrap{
+	float: left;
+	width: 140px;
+}
+.content .banner-box .lesson-tip .userinfo .info-wrap p:nth-of-type(1){
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.content .banner-box .lesson-tip .userinfo .info-wrap p:nth-of-type(1) a.user-name{
+	color: #3287C8;
+	display: inline-block;
+	width: 58px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: text-top;  /***/
+}
+.content .banner-box .lesson-tip .userinfo .info-wrap p:nth-of-type(1) a.user-vip{
+	background: url(../img/vip-year_3ecca1f.png) no-repeat;
+	background-size: 40px 15px;
+	display: inline-block;
+	width: 40px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+.content .banner-box .lesson-tip .userinfo .info-wrap p:nth-of-type(2) a:hover{
+	color: #35b558;
+}
+.content .banner-box .lesson-tip .userinfo .info-wrap p:nth-of-type(3) a{
+	display: block;
+	margin-top: 10px;
+	width: 60px;
+	height: 20px;
+	line-height: 20px;
+	background: #fddeca;
+	color: #ff5c00;
+	text-align: center;
+}
+/*相关课程推荐*/
+.content .banner-box .lesson-tip .recommend ul.start-list{
+	overflow: hidden;
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li{
+	float: left;
+	width: 51px;
+	height: 75px;
+	font-size: 12px;
+	text-align: center;
+	border-right: 1px solid #f5f5f5;
+	border-bottom: 1px solid #f5f5f5;
+	cursor: pointer;
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li:nth-of-type(4n){
+	border-right: 0;
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li:nth-of-type(n+5){
+	border-bottom: 0;
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li a{
+	display: block;
+	height: 100%;
+	overflow: hidden;
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li a:hover{
+	color: #35B558;
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li .title{
+	display: block;
+	margin-top: 3px;
+}
+/*向下的三角符号*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .angle-bottom{
+	display: block;
+	width: 0;
+	height: 0;
+	border: 6px solid #E4E4E4;
+	border-bottom: 0;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	margin: 5px auto;
+}
+/*显示图标*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .icon{
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 13px auto 0;
+	background: url(../img/recommend_4a9a464.png) no-repeat;
+	background-size: 71px 232px;
+}
+/*问答*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .icon.question{
+	background-position: -5px -3px;	
+}
+/*wiki*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .icon.wiki{
+	background-position: -5px -31px;	
+}
+/*课程*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .icon.lesson{
+	background-position: -5px -59px;	
+}
+/*社群*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .icon.group{
+	background-position: -5px -87px;	
+}
+/*下载*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .icon.download{
+	background-position: -5px -117px;	
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li a:hover .icon.download{
+	background-position: -41px -117px;
+}
+/*知识*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .icon.known{
+	background-position: -5px -144px;	
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li a:hover .icon.known{
+	background-position: -41px -144px;
+}
+/*职业*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .icon.job{
+	background-position: -5px -173px;	
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li a:hover .icon.job{
+	background-position: -41px -173px;
+}
+/*vip*/
+.content .banner-box .lesson-tip .recommend ul.start-list li .icon.vip{
+	background-position: -5px -202px;	
+}
+.content .banner-box .lesson-tip .recommend ul.start-list li a:hover .icon.vip{
+	background-position: -41px -202px;
+}
+.content .banner-box .lesson-tip .recommend .tab-box{
+	display: block;
+}
+.content .banner-box .lesson-tip .recommend .tab-box ul.type-list{
+	overflow: hidden;
+}
+.content .banner-box .lesson-tip .recommend .tab-box ul.type-list li{
+	float: left;
+	width: 51px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12px;
+	background: #fcfcfc;
+	border-right: 1px solid #F5F5F5;
+	border-bottom: 1px solid #F5F5F5;
+	cursor: pointer;
+}
+.content .banner-box .lesson-tip .recommend .tab-box ul.type-list li.active{
+	border-bottom: 0;
+	background: #fff;
+	color: #35b558;
+}
+/*问题内容*/
+.content .banner-box .lesson-tip .recommend .tab-box .content .question-content{
+	padding: 10px;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .question-content li a{
+	display: block;
+	font-size: 12px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #666;
+	height: 22px;
+	line-height: 22px;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .question-content li a:hover{
+	color: #35B558;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .question-content li a img{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 6px;	
+}
+/*wiki内容*/
+.content .banner-box .lesson-tip .recommend .tab-box .content .wiki-content ul{
+	padding: 15px 10px;
+	overflow: hidden;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .wiki-content li a{
+	display: block;
+	float: left;
+	width: 55px;
+	margin-right: 7px;
+	font-size: 12px;
+	color: #666;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .wiki-content li a:hover{
+	color: #35B558;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .wiki-content li a img{
+	width: 55px;
+	height: 73px;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .wiki-content li a .title{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 8px;
+}
+/*课程内容*/
+.content .banner-box .lesson-tip .recommend .tab-box .content .lesson-content ul{
+	overflow: hidden;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .lesson-content li{
+	float: left;
+	width: 103px;
+	height: 62px;
+	border-right: 1px solid #f5f5f5;
+	border-bottom: 1px solid #f5f5f5;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .lesson-content li:nth-of-type(2n){
+	border-right: 0;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .lesson-content li:nth-of-type(n+3){
+	border-bottom: 0;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .lesson-content li a{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .lesson-content li a:hover{
+	color: #35b558;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .lesson-content li a img{
+	width: 30px;
+	height: 30px;
+	margin: 7px auto 2px;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .lesson-content li a .title{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+/*社群内容*/
+.content .banner-box .lesson-tip .recommend .tab-box .content .group-content ul{
+	padding: 10px 0;
+	font-size: 12px;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .group-content li{
+	height: 34px;
+	padding: 10px;
+	border-bottom: 1px solid #f5f5f5;
+	overflow: hidden;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .group-content li img{
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: 10px;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .group-content li .info{
+	float: left;
+	width: 95px;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .group-content li .info .title{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.content .banner-box .lesson-tip .recommend .tab-box .content .group-content li .join{
+	float: left;
+	width: 50px;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	background: #ff5c00;
+	text-align: center;
+	border-radius: 3px;
+	margin-top: 5px;
+}
+
+/*热门课程分类*/
+.content .hot-lesson ul.hot-lesson-type{
+	/*border-bottom: 1px solid #e4e4e4;*/
+	background: url(../img/hotnav_bc_f22b37e.jpg) 0 100% repeat-x;
+	overflow: hidden;
+}
+.content .hot-lesson ul.hot-lesson-type li{
+	float: left;
+	width: 16.6%;
+	text-align: center;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.content .hot-lesson ul.hot-lesson-type li.on{
+	border-bottom: 2px solid #35B558;
+	background: url(../img/index-sj_cc73747.png) center bottom no-repeat;
+	background-size: 10px 4px;
+}
+.content .hot-lesson .hot-lesson-box{
+	margin: 20px auto;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul{
+	/*overflow: hidden;*/
+	width: 1100px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul:after{
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li{
+	float: left;
+	width: 235px;
+	height: 220px;
+	margin-right: 20px;
+	margin-bottom: 20px;	
+}
+/*课程突变部分*/
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-img-box{
+	width: 233px;
+	height: 129px;
+	border: 1px solid #E4E4E4;
+	border-bottom: 0;
+	position: relative;
+}
+/*收藏图片*/
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-img-box .lesson-shoucang{
+	display: none;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: url(../img/shoucang-1_76dc56f.png) no-repeat;
+	background-size: 16px 16px;
+	z-index: 101;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-img-box .lesson-shoucang:hover{
+	background: url(../img/shoucang-2_3d597dc.png) no-repeat;
+	background-size: 16px 16px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li:hover .lesson-img-box .lesson-shoucang{
+	display: block;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-img-box img{
+	width: 100%;
+	height: 130px;
+	z-index: 100;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-img-box .play-lesson{
+	background: rgba(0,0,0,.4);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity .5s ease;
+	-webkit-transition: opacity .5s ease;
+	-moz-transition: opacity .5s ease;
+	-ms-transition: opacity .5s ease;
+	-o-transition: opacity .5s ease;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li:hover .play-lesson{
+	opacity: 1;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-img-box .play-lesson .player-icon{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(../img/player_icon_5c67475.png) no-repeat;
+	background-size: 50px 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	z-index: 120;
+}
+
+/*免费图标*/
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-img-box .free-icon{
+	display: inline-block;
+	width: 38px;
+	height: 22px;
+	position: absolute;
+	top: -2px;
+	right: 8px;
+	background: url(../img/icon_7f8b929.png) no-repeat;
+	background-position: -58px -43px;
+	z-index: 101;
+}
+
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box{
+	padding: 10px;
+	width: 213px;
+	height: 67px;
+	border: 1px solid #E4E4E4;
+	border-top: 0;
+	background: #fff;
+	position: relative;
+	z-index: 200;
+	transition: height .2s ease;
+	-webkit-transition: height .2s ease;
+	-moz-transition: height .2s ease;
+	-ms-transition: height .2s ease;
+	-o-transition: height .2s ease;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li:hover .lesson-info-box{
+	height: 154px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box .lesson-title{
+	font-size: 14px;
+	font-weight: normal;
+	color: #333;
+	height: 36px;
+	line-height: 18px;
+	margin-bottom: 12px;
+	overflow: hidden;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box .lesson-desc{
+	font-size: 12px;
+	color: #808080;
+	overflow: hidden;
+	line-height: 18px;
+	margin-bottom: 10px;
+	height: 0px;
+	opacity: 0;
+	/*display: none;*/
+	transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li:hover .lesson-info-box .lesson-desc{
+	/*display: block;*/
+	height: 52px;
+	opacity: 1;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box .lesson-time{
+	font-size: 12px;
+	color: #808080;
+	position: relative;
+	overflow: hidden;
+	margin-top: -10px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li:hover .lesson-info-box .lesson-time{
+	margin-top: 10px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box  .lesson-time dl{
+	float: left;
+	width: 120px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box .lesson-time dl dd.dengji{
+	display: none;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li:hover .lesson-info-box .lesson-time dl dd.dengji{
+	display: block;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box  .lesson-time dl .time-icon{
+	background: url(../img/clok_a413ecf.png) no-repeat;
+	background-size: 14px 14px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin-right: 8px;
+}
+/*课程等级的信号图标*/
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box  .lesson-time dl .xinhao-icon{
+	display: block;
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin-right: 8px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box  .lesson-time dl .xinhao-icon1{
+	background: url(../img/one-ji_1731712.png) no-repeat;
+	background-size: 14px 14px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box  .lesson-time dl .xinhao-icon2{
+	background: url(../img/tow-ji_ec2b553.png) no-repeat;
+	background-size: 14px 14px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box  .lesson-time dl .xinhao-icon3{
+	background: url(../img/three-ji_b588ab1.png) no-repeat;
+	background-size: 14px 14px;
+}
+
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box .lesson-time .learn-number{
+	float: right;
+	display: none;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li:hover .lesson-info-box .lesson-time .learn-number{
+	display: block;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box .lesson-time a.lesson-user-icon{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	bottom: 4px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li:hover .lesson-info-box .lesson-time a.lesson-user-icon{
+	bottom: -2px;
+}
+.content .hot-lesson .hot-lesson-box .lesson-list ul li .lesson-info-box  .lesson-time a.lesson-user-icon img{
+	width: 16px;
+	height: 16px;
+}
+
+
+/*二级标题的公共样式*/
+.content .index-public-title{
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+.content .index-public-title strong{
+	font-weight: normal;
+	font-size: 18px;
+	color: #333;
+	float: left;
+}
+.content .index-public-title .way-icon{
+	display: block;
+	float: left;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #999;
+	color: #fff;
+	font-size: 12px;
+	line-height: 13px;
+	text-align: center;
+	margin: 5px 4px 0 8px;
+	cursor: pointer;
+}
+.content .index-public-title .way-info{
+	opacity: 0;
+	display: inline-block;
+	font-size: 12px;
+	color: #666;
+	padding: 2px 4px;
+	border: 1px solid #E4E4E4;
+	box-shadow: 1px 1px 3px #ccc;
+	position: relative;
+	left: 0px;
+	transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+}
+.content .index-public-title .way-info i{
+	background: url(../img/title-sj_adebc06.jpg) no-repeat;
+	display: block;
+	width: 5px;
+	height: 10px;
+	position: absolute;
+	left: -5px;
+	top: 5px;
+	z-index: 10;
+}
+.content .index-public-title .way-icon:hover + .way-info{
+	opacity: 1;
+	left: 3px;
+}
+.content .index-public-title .more-way{
+	float: right;
+	font-size: 12px;
+	color: #2d85ca;
+	margin-top: 4px;
+}
+
+/*职业路径图*/
+.content .learn-way .learn-card::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.content .learn-way .learn-card a{
+	float: left;
+	display: block;
+	width: 198px;
+	height: 300px;
+	text-align: center;
+	overflow: hidden;
+	border: 1px solid #E4E4E4;
+	border-right: 0;
+}
+.content .learn-way .learn-card a:nth-of-type(5n+0){
+	border: 1px solid #E4E4E4;
+}
+.content .learn-way .learn-card a:nth-of-type(n+6){
+	border-top: 0;
+}
+.content .learn-way .learn-card a img{
+	width: 100%;
+	height: 120px;
+	margin-bottom: 24px;
+}
+.content .learn-way .learn-card a h2{
+	font-weight: normal;
+	font-size: 15px;
+	color: #333;
+	height: 18px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.content .learn-way .learn-card a  p{
+	font-size: 12px;
+	color: #666;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+.content .learn-way .learn-card a .learn-btn,
+.content .learn-way .learn-card a .waiting-btn{
+	width: 140px;
+	height: 34px;
+	font-size: 16px;
+	line-height: 34px;
+	text-align: center;
+	margin-top: 20px;
+	cursor: pointer;
+	outline: 0;
+}
+.content .learn-way .learn-card a .learn-btn{
+	color: #35B558;
+	background: #f3fff6;
+	border:1px solid #35B558;
+	transition: background-color .2s ease-in;
+	-webkit-transition: background-color .2s ease-in;
+	-moz-transition: background-color .2s ease-in;
+	-ms-transition: background-color .2s ease-in;
+	-o-transition: background-color .2s ease-in;
+}
+.content .learn-way .learn-card a .waiting-btn{
+	color: #808080;
+	background: #f5f5f5;
+	border: 1px solid #E4E4E4;
+	transition: background-color .2s ease-in;
+	-webkit-transition: background-color .2s ease-in;
+	-moz-transition: background-color .2s ease-in;
+	-ms-transition: background-color .2s ease-in;
+	-o-transition: background-color .2s ease-in;
+}
+.content .learn-way .learn-card a:hover{
+	border: 1px solid #35B558;
+}
+.content .learn-way .learn-card a:hover .learn-btn{
+	background-color: #35B558;
+	color: #fff;
+}
+.content .learn-way .learn-card a:hover .waiting-btn{
+	background-color: #ddd;
+	outline: 0;
+}
+
+
+/*知识体系图*/
+.content .learn-box .map-card::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.content .learn-box .map-card a{
+	display: block;
+	float: left;
+	width: 165px;
+	height: 120px;
+	border: 1px solid #E4E4E4;
+	border-right: 0;
+	border-bottom: 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.content .learn-box .map-card a:nth-of-type(6n+0){
+	border-right: 1px solid #E4E4E4;
+}
+.content .learn-box .map-card a:nth-of-type(n+19){
+	border-bottom: 1px solid #E4E4E4;
+}
+.content .learn-box .map-card a .front,
+.content .learn-box .map-card a .back{
+	width: 167px;
+	height: 90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden; /*指定元素背面不可见*/
+	-webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    transition: transform .6s ease;
+    -webkit-transition: transform .6s ease;
+    -moz-transition: transform .6s ease;
+    -ms-transition: transform .6s ease;
+    -o-transition: transform .6s ease;
+}
+.content .learn-box .map-card a .front{
+	padding: 15px 0;
+	background-color: #fff;
+	z-index: 2;
+}
+.content .learn-box .map-card a .front img{
+	width: 40px;
+	height: 40px;
+	margin-bottom: 5px;
+}
+.content .learn-box .map-card a .front h2{
+	font-weight: normal;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 5px;
+}
+.content .learn-box .map-card a .front p{
+	font-size: 14px;
+	color: #35b558;
+}
+.content .learn-box .map-card a .back{
+	background-color: #F5F5F5;
+	padding-top: 30px;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+}
+.content .learn-box .map-card a .back p{
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 10px;
+}
+.content .learn-box .map-card a .back button{
+	width: 140px;
+	height: 36px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background-color: #35b558;
+	border: 1px solid #35B558;
+	cursor: pointer;
+	transition: background-color .5s ease;
+	-webkit-transition: background-color .5s ease;
+	-moz-transition: background-color .5s ease;
+	-ms-transition: background-color .5s ease;
+	-o-transition: background-color .5s ease;
+}
+.content .learn-box .map-card a .back button:hover{
+	background-color: #66d178;
+	border-color: #66d178;
+}
+.content .learn-box .map-card a:hover .front{
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+}
+.content .learn-box .map-card a:hover .back{
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+}
+
+/*精品系列课程*/
+.content .excellent-lesson .wiki-box::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.content .excellent-lesson .wiki-box .wiki-card{
+	float: left;
+	width: 201px;
+	height: 227px;
+	font-size: 12px;
+	padding: 16px;
+	border: 1px solid #E4E4E4;
+	margin-left: 20px;
+	position: relative;
+	transition: border-color .3s ease-out;
+	-webkit-transition: border-color .3s ease-out;
+	-moz-transition: border-color .3s ease-out;
+	-ms-transition: border-color .3s ease-out;
+	-o-transition: border-color .3s ease-out;
+}
+.content .excellent-lesson .wiki-box .wiki-card:hover{
+	border-color: #35B558;
+}
+.content .excellent-lesson .wiki-box .wiki-card:nth-of-type(1){
+	margin-left: 0;
+}
+.content .excellent-lesson .wiki-box .wiki-card  h2{
+	font-weight: normal;
+	font-size: 14px;
+	width: 80%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.content .excellent-lesson .wiki-box .wiki-card .images-box img{
+	width: 100%;
+	height: 100%;
+}
+.content .excellent-lesson .wiki-box .wiki-card .other-info{
+	margin-top: 15px;
+	color: #808080;
+	position: relative;
+	z-index: 20;
+}
+.content .excellent-lesson .wiki-box .wiki-card .other-info span{
+	margin-right: 6px;
+}
+.content .excellent-lesson .wiki-box .wiki-card .other-info button{
+	float: right;
+	outline: 0;
+	width: 56px;
+	height: 20px;
+	border: 1px solid #35b558;
+	background: #35b558;
+	color: #fff;
+	border-radius: 3px;
+	transition: background-color 0.8s ease;
+	-webkit-transition: background-color 0.8s ease;
+	-moz-transition: background-color 0.8s ease;
+	-ms-transition: background-color 0.8s ease;
+	-o-transition: background-color 0.8s ease;
+}
+.content .excellent-lesson .wiki-box .wiki-card .other-info button:hover{
+	background-color: #66d178;
+	cursor: pointer;
+}
+.content .excellent-lesson .wiki-box .wiki-card .describe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,.9);
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity .2s ease-in;
+	-webkit-transition: opacity .2s ease-in;
+	-moz-transition: opacity .2s ease-in;
+	-ms-transition: opacity .2s ease-in;
+	-o-transition: opacity .2s ease-in;
+}
+.content .excellent-lesson .wiki-box .wiki-card:hover .describe{
+	opacity: 1;
+}
+.content .excellent-lesson .wiki-box .wiki-card .describe .img-box{
+	height: 65px;
+	margin-top: 20px;
+}
+.content .excellent-lesson .wiki-box .wiki-card .describe .img-box img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.content .excellent-lesson .wiki-box .wiki-card .describe .img-box a.name{
+	display: block;
+	color: #666;
+}
+.content .excellent-lesson .wiki-box .wiki-card .describe .img-box a.name:hover{
+	color: #35B558;
+}
+.content .excellent-lesson .wiki-box .wiki-card .describe a.text-info{
+	margin-top: 15px;
+	padding: 0 16px;
+	display: block;
+	height: 40px;
+	overflow: hidden;
+	color: #666;
+	text-align: left;
+	line-height: 20px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.content .excellent-lesson .wiki-box .wiki-card .describe a.text-info:hover{
+	color: #35B558;
+}
+.content .excellent-lesson .wiki-box .wiki-card .describe a.learn-btn{
+	display: block;
+	margin: 24px auto 0;
+	width: 100px;
+	height: 28px;
+	font-size: 14px;
+	line-height: 26px;
+	background: #35B558;
+	color: #fff;
+	border-radius: 2px;
+	transition: background .8s ease;
+	-webkit-transition: background .8s ease;
+	-moz-transition: background .8s ease;
+	-ms-transition: background .8s ease;
+	-o-transition: background .8s ease;
+}
+.content .excellent-lesson .wiki-box .wiki-card .describe a.learn-btn:hover{
+	background: #66d178;
+}
+
+/*Wiki*/
+.content .wiki .wiki-box::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.content .wiki .wiki-box .wiki-card{
+	float: left;
+	width: 301px;
+	height: 338px;
+	padding: 15px;
+	border: 1px solid #E4E4E4;
+	border-right: 0;
+}
+.content .wiki .wiki-box .wiki-card:nth-of-type(3n+0){
+	border-right: 1px solid #E4E4E4;
+}
+.content .wiki .wiki-box .wiki-card:hover{
+	border-color: #35B558;
+	border-right: 1px solid #35B558;
+}
+.content .wiki .wiki-box .wiki-card h2{
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.content .wiki .wiki-box .wiki-card .img-info::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book{
+	display: block;
+	float: left;
+	width: 142px;
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book:nth-of-type(1){
+	margin-right: 15px;
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book .img-box{
+	position: relative;
+	background: #999;
+	border-radius: 5px;
+	width: 100%;
+	height: 200px;
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book .img-box .look-icon{
+	display: none;
+	position: absolute;
+	top: -13px;
+	right: -10px;
+	width: 40px;
+	height: 20px;
+	background: url(../img/look_d293d44.png) no-repeat;
+	background-size: 40px 20px;
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book .img-box img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	transform-origin: left;
+	transform: rotateY(0deg);
+	transition: transform .8s ease;
+
+	-webkit-transform-origin: left;
+	-webkit-transform: rotateY(0deg);
+	-webkit-transition: transform .8s ease;
+
+	-moz-transform-origin: left;
+	-moz-transform: rotateY(0deg);
+	-moz-transition: transform .8s ease;
+
+	-ms-transform-origin: left;
+	-ms-transform: rotateY(0deg);
+	-ms-transition: transform .8s ease;
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book h3{
+	font-weight: normal;
+	font-size: 13px;
+	color: #333;
+	white-space: nowrap;/*设置或检索对象内空格的处理方式。*/
+	text-overflow: ellipsis;
+	overflow: hidden;
+	line-height: 13px;
+	margin: 10px auto;
+	text-align: center;
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book p{
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book:hover .look-icon{
+	display: block;
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book:hover .img-box img{
+	transform-origin: left;
+	transform: rotateY(20deg);
+
+	-webkit-transform-origin: left;
+	-webkit-transform: rotateY(20deg);
+
+	-moz-transform-origin: left;
+	-moz-transform: rotateY(20deg);
+
+	-ms-transform-origin: left;
+	-ms-transform: rotateY(20deg);
+}
+.content .wiki .wiki-box .wiki-card .img-info a.book:hover h3,
+.content .wiki .wiki-box .wiki-card .img-info a.book:hover p{
+	color: #35B558;
+}
+
+.content .wiki .wiki-box .wiki-card ul{
+	margin-top: 10px;
+}
+.content .wiki .wiki-box .wiki-card ul a{
+	display: block;
+	color: #999;
+	font-size: 12px;
+	line-height: 12px;
+	margin-bottom: 8px;
+	overflow: hidden;
+}
+.content .wiki .wiki-box .wiki-card ul a:hover{
+	color: #35B558;
+}
+.content .wiki .wiki-box .wiki-card ul a p{
+	float: left;
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.content .wiki .wiki-box .wiki-card ul a span{
+	float: right;
+	display: block;
+	width: 90px;
+	text-align: right;
+}
+
+/*战略合作企业  媒体报道*/
+.content .enterprise .startegy-box,
+.content .media-report .media-box{
+	border: 1px solid #e4e4e4;
+	padding: 20px;
+	height: 50px;
+}
+.content .enterprise .startegy-box a,
+.content .media-report .media-box a{
+	display: inline-block;
+	width: 155px;
+	text-align: center;
+}
+.content .enterprise .startegy-box a img,
+.content .media-report .media-box a img{
+	border: 1px solid #e4e4e4;
+	width: 150px;
+	height: 50px;
+}
+
+
+
+/*******end 主体********/
+
+
+
+
+/*******底部********/
+footer{
+	margin-top: 50px;
+}
+footer .foot-info-box{
+	background: #fafafa;
+	border-top: 1px solid #E4E4E4;
+	border-bottom: 1px solid #E4E4E4;
+}
+footer .foot-info-box .info-desc{
+	margin: 0 auto;
+	overflow: hidden;
+}
+footer .foot-info-box .info-desc dl{
+	float: left;
+	width: 185px;
+	margin: 25px 0;
+	padding-left: 30px;
+	border-left: 1px solid #e4e4e4;
+	min-height: 175px;
+}
+footer .foot-info-box .info-desc dd{
+	margin-top: 10px;
+	position: relative;
+	font-size: 12px;
+}
+footer .foot-info-box .info-desc dd::before{
+	content: '.';
+	position: absolute;
+	top: -5px;
+	color: #808080;
+	font-weight: bold;
+}
+footer .foot-info-box .info-desc dl a{
+	color: #808080;
+	padding-left: 8px;
+}
+/*右侧搜索分享链接*/
+footer .foot-info-box .search-share{
+	float: left;
+	border-left: 1px solid #e4e4e4;
+	padding: 20px 0 0 40px;
+	min-height: 200px;
+}
+footer .foot-info-box .search-share strong.jk-txt{
+	display: block;
+	font-size: 15px;
+	font-weight: 500; /*貌似没起作用？*/
+	color: #35b558;
+	margin-bottom: 15px;
+}
+/*手机客户端*/
+footer .foot-info-box .search-share .phone-client a{
+	display: block;
+	background: url(../img/iphone_ecb3977.png) no-repeat;
+	background-size: 21px 39px;
+	padding-left: 35px;
+}
+footer .foot-info-box .search-share .phone-client a strong{
+	font-size: 18px;
+	color: #666;
+	margin-bottom: 8px;
+}
+footer .foot-info-box .search-share .phone-client a p{
+	font-size: 14px;
+	color: #808080;
+}
+
+footer .foot-info-box .search-share .share{
+	margin-top: 15px;
+	overflow: hidden;
+}
+footer .foot-info-box .search-share .share a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(../img/icon_7f8b929.png) no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+/*新浪图标*/
+footer .foot-info-box .search-share .share a.sina-icon{
+	background-position: -23px 0;
+}
+footer .foot-info-box .search-share .share a.sina-icon:hover{
+	background-position: -23px -40px;
+}
+/*贴吧图标*/
+footer .foot-info-box .search-share .share a.tieba-icon{
+	background-position: -145px 0;
+}
+footer .foot-info-box .search-share .share a.tieba-icon:hover{
+	background-position: -145px -40px;
+}
+/*微信图标*/
+footer .foot-info-box .search-share .share a.weixin-icon{
+	background-position: -23px -82px;
+}
+footer .foot-info-box .search-share .share a.weixin-icon:hover{
+	background-position: -23px -122px;
+}
+/*在线客服*/
+footer .foot-info-box .search-share .service-online{
+	margin-top: 15px;
+}
+footer .foot-info-box .search-share .service-online a{
+	display: block;
+}
+footer .foot-info-box .search-share .service-online a i.online-icon{
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: url(../img/kefu_8edc734.png) no-repeat;
+	background-size: 80px 40px;
+	margin-right: 5px;
+}
+footer .foot-info-box .search-share .service-online a p:nth-of-type(1){
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+footer .foot-info-box .search-share .service-online a p:nth-of-type(2){
+	color: #808080;
+	font-size: 12px;
+}
+
+/*版权信息*/
+footer .copyright{
+	margin: 0 auto;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	padding:20px;
+}
+footer .copyright a{
+	color: #999;
+}
+
+footer a:hover,
+footer .foot-info-box .search-share .phone-client a:hover strong,
+footer .foot-info-box .search-share .phone-client a:hover p,
+footer .foot-info-box .search-share .service-online a:hover p{
+	color: #35B558 !important;
+}
+
+/*******end 底部********/
